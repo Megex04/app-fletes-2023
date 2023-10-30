@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+
+.alerta {
+    padding: calc(v.$separacion / 4);
+    color: v.$blanco;
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+
+    &.error {
+        border: 3px solid v.$rojo;
+        background-color: v.$rojoClaro;
+    }
+    &.exito {
+        border: 3px solid v.$verde;
+        background-color: v.$verdeClaro;
+        color: v.$negro;
+    }
+}
