@@ -37,11 +37,11 @@ class Email {
          $mail->isHTML(TRUE);
          $mail->CharSet = 'UTF-8';
 
-         $contenido = '<html>';
-         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has Creado tu cuenta en App Fletes, solo debes confirmarla presionando el siguiente enlace</p>";
+         $contenido = "<html>";
+         $contenido .= "<<strong>Hola " . $this->nombre .  "</strong> Has Creado tu cuenta en App Fletes, solo debes confirmarla presionando el siguiente enlace</p>";
          $contenido .= "<p>Presiona aquí: <a href='". $_ENV['APP_URL'] ."/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
-         $contenido .= '</html>';
+         $contenido .= "</html>";
          $mail->Body = $contenido;
 
          //Enviar el mail
@@ -68,11 +68,11 @@ class Email {
         $mail->isHTML(TRUE);
         $mail->CharSet = 'UTF-8';
 
-        $contenido = '<html>';
-        $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
+        $contenido = "<html>";
+        $contenido .= "<<strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
         $contenido .= "<p>Presiona aquí: <a href='". $_ENV['APP_URL'] ."/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
-        $contenido .= '</html>';
+        $contenido .= "</html>";
         $mail->Body = $contenido;
 
             //Enviar el mail
