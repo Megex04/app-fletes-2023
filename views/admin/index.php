@@ -73,5 +73,7 @@
 </div>
 
 <?php
-    $script = "<script src='/build/js/buscador.js'></script>"
+    $script = "
+    <script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script src='/build/js/buscador.js'></script>";
 ?>
