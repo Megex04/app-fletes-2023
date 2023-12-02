@@ -1,7 +1,7 @@
 {
-  "name": "app-salon-php-mvc-sass-s",
+  "name": "miguellacunza-app-fletes_php_mvc_js_sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "App-Fletes_S&P",
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
