@@ -442,7 +442,6 @@ async function reservarCita() {
         })
     }
 
-    
     // console.log([...datos]);
 
 }
