@@ -399,7 +399,7 @@ async function reservarCita() {
     const { nombre, fecha, hora, servicios, id} = cita;
 
     const idServicios = servicios.map( servicio => servicio.id );
-    // console.log(idServicios);
+    console.log(idServicios);
 
     const datos = new FormData();
     
@@ -409,7 +409,7 @@ async function reservarCita() {
     //datos.append('usuarioId', hora); // para simular el error del catch
     datos.append('servicios', idServicios);
 
-    // console.log([...datos]);
+    console.log([...datos]);
 
     try {
         // Petición hacia la api
